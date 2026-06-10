@@ -1,167 +1,18 @@
 @import "tailwindcss";
 
-@theme inline {
-  --color-brand-blue: #243e76;
-  --color-brand-cyan: #0481a2;
-  --color-black: #000000;
-  --color-white: #FFFFFF;
-  --font-sans: var(--font-varela), sans-serif;
-}
-
-body {
-  background-color: var(--color-white);
-  color: var(--color-black);
-}
-
-/* Glassmorphism utilities for Light Theme */
-.glass-panel {
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(36, 62, 118, 0.1);
-}
-
-.glass-panel-hover {
-  transition: all 0.3s ease;
-}
-
-.glass-panel-hover:hover {
-  background: rgba(255, 255, 255, 0.9);
-  border-color: rgba(4, 129, 162, 0.3);
-  transform: translateY(-2px);
-  box-shadow: 0 10px 25px -5px rgba(36, 62, 118, 0.1), 0 8px 10px -6px rgba(36, 62, 118, 0.1);
-}
 :root {
   --background: #ffffff;
-  --foreground: #0f172a;
+  --foreground: #171717;
 }
 
-@theme {
-  --color-primary-blue: #243E76;
-  --color-secondary-teal: #0481A2;
-  --color-heading: #0F172A;
-  --color-body-text: #64748B;
-  --color-border-gray: #E5E7EB;
-  
-  --font-sans: var(--font-varela), "Varela Round", sans-serif;
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
 }
 
-/* Force light theme colors on body */
 body {
-  background-color: #ffffff;
-  color: #64748B;
-  font-family: var(--font-varela), "Varela Round", sans-serif !important;
-  overflow-x: hidden;
-}
-
-* {
-  font-family: var(--font-varela), "Varela Round", sans-serif !important;
-}
-
-/* Custom Scrollbar for premium look */
-::-webkit-scrollbar {
-  width: 8px;
-}
-::-webkit-scrollbar-track {
-  background: #f1f5f9;
-}
-::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
-  border-radius: 4px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #94a3b8;
-}
-
-/* ===== TABLET ONLY ===== */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  /* Entire first screen */
-  #hero {
-    min-height: 100vh !important;
-    height: auto !important;
-    padding: 60px 24px !important;
-    background: url("/bg-tabimage.png") !important;
-    background-size: cover !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-  }
-
-  /* Content + form stacked */
-  .hero-grid {
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
-    gap: 28px !important;
-    width: 100% !important;
-    height: auto !important;
-  }
-
-  /* Hide desktop image */
-  .hero-image {
-    display: none !important;
-  }
-
-  /* Text section */
-  .hero-content {
-    position: relative !important;
-    max-width: 700px !important;
-    margin: 0 auto !important;
-    text-align: center !important;
-    padding: 32px !important;
-    background: rgba(255, 255, 255, 0.72) !important;
-    backdrop-filter: blur(12px) !important;
-    border-radius: 28px !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
-  }
-
-  .hero-content h1 {
-    font-size: 3rem !important;
-    line-height: 1.1 !important;
-    color: #0b2330 !important;
-  }
-
-  .hero-content p {
-    color: rgba(11, 35, 48, 0.75) !important;
-  }
-
-  .hero-buttons {
-    display: flex !important;
-    justify-content: center !important;
-    width: 100% !important;
-  }
-
-  /* Form below content */
-  .hero-form {
-    display: flex !important;
-    width: 100% !important;
-    max-width: 760px !important;
-    margin: 0 auto !important;
-    padding: 36px !important;
-    background: rgba(255, 255, 255, 0.88) !important;
-    backdrop-filter: blur(18px) !important;
-    border-radius: 30px !important;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12) !important;
-  }
-
-  .hero-form input,
-  .hero-form select {
-    height: 58px !important;
-  }
-
-  .hero-form button {
-    height: 62px !important;
-  }
-
-  /* Hide contact frame on tablet */
-  #contact {
-    display: none !important;
-  }
+  background: var(--background);
+  color: var(--foreground);
 }
 
 /* ============================================================

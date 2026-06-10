@@ -278,7 +278,7 @@ export default function Hero() {
               {/* Eyebrow */}
               <motion.span
                 variants={fromLeft}
-                className="text-[11px] sm:text-[12px] font-bold tracking-[3px] text-secondary-teal uppercase mb-3 block md:hidden lg:block"
+                className="text-[11px] sm:text-[12px] md:text-[13px] font -bold tracking-[3px] text-secondary-teal uppercase mb-3 block md:hidden lg:block"
               >
                 WEBSITE DEVELOPMENT COMPANY <br className="lg:hidden sm:inline" />IN CHENNAI
               </motion.span>

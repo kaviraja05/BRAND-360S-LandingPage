@@ -97,7 +97,7 @@ export default function Testimonials() {
             className="flex items-center justify-center gap-4 mb-4"
           >
             <div className="w-8 md:w-12 h-[1px]" style={{ backgroundColor: "rgb(4, 129, 162)" }}></div>
-            <div className="text-[13px] md:text-[15px] font-bold uppercase tracking-widest text-center leading-tight" style={{ color: "rgb(4, 129, 162)" }}>
+            <div className="text-[12px] md:text-[14px] font-bold uppercase tracking-widest text-center leading-tight" style={{ color: "rgb(4, 129, 162)" }}>
               We trust businesses
             </div>
             <div className="w-8 md:w-12 h-[1px]" style={{ backgroundColor: "rgb(4, 129, 162)" }}></div>
